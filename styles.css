@@ -3,11 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    background: rgb(235, 73, 73);
-}
-body{
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -16,11 +13,15 @@ body{
     font-family: sans-serif;
     color: white;
 }
+h1{
+    margin-bottom: 3rem;
+    text-align: center;
+}
 form{
     position: relative;
 }
 input{
-    min-width: 28rem;
+    width: 28rem;
     height: 4rem;
     padding: 0 25px;
     outline: 0;
@@ -69,4 +70,38 @@ input{
 }
 .fa-check{
     color: green;
+}
+h2{
+    font-size: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+}
+@media (max-width: 470px){
+    input{
+        width: 19rem;
+        height: 3rem;
+        font-size: 18px;
+    }
+    h1{
+        margin: 1rem;
+        margin-bottom: 3rem;
+    }
+    .far{
+        font-size: 25px;
+        top: 0.7rem;
+    }
+    .message{
+        width: 19rem;
+        height: 11.5rem;
+        top: 1.5rem;
+    }
+    .password-contain{
+        font-size: 15.5px;
+        padding: 0 55px;
+    }
+    .fas{
+        top: 1.3rem;
+        font-size: 18px;
+    }
 }

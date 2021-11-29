@@ -89,7 +89,7 @@ Password.onkeyup = function () {
                 icon: "success",
                 buttons: true,
                 dangerMode: true,
-                buttons: ["No, it´s OK", "Yes!"],
+                buttons: ["No, it´s OK", "Yes, please!"],
             })
             .then((willDelete) => {
                 if (willDelete) {
@@ -102,7 +102,6 @@ Password.onkeyup = function () {
                                 location.reload();
                             }, 100)
                         });
-
                 } else {
                     swal("Great! Enjoy your new perfect password !", {
                         button: "Close",
